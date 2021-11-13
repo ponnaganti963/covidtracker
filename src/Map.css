@@ -1,0 +1,60 @@
+.map{
+    height: 500px;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 16px 0;
+    box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+.map .leaflet-container{
+    height: 100%;
+}
+
+.Info-flag{
+    width: 100%;
+    height: 80px;
+    background-size: 100% 100%;
+    border-radius: 8px;
+}
+
+.Info-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+.Info-cases,
+.Info-recovered,
+.Info-deaths{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.Info-Container{
+    width: 150px;
+}
+
+@media screen and (max-width: 500px) {
+    .map{
+        height: 350px;
+    }
+    .Info-Container{
+        width: 100px;
+    }
+    .Info-name{
+        font-size: 18px;
+    }
+    
+    .Info-cases,
+    .Info-recovered,
+    .Info-deaths{
+        font-size: 14px;
+    }
+    .Info-flag{
+        width: 100%;
+        background-size: 100% 100%;
+
+        height: 50px;
+    }
+}
